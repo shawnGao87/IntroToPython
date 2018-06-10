@@ -40,7 +40,7 @@
             </list>
           </option>
           <option name="type" value="pycharm Python" />
-          <option name="updateDate" value="1514201808000" />
+          <option name="updateDate" value="1514230608000" />
           <option name="items">
             <list>
               <Lesson>
@@ -67,7 +67,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, failed, passed, get_answer_placeholders&#10;&#10;&#10;def test_ASCII():&#10;    windows = get_answer_placeholders()&#10;    for window in windows:&#10;        all_ascii = all(ord(c) &lt; 128 for c in window)&#10;        if not all_ascii:&#10;            failed(&quot;Please use only English characters this time.&quot;)&#10;            return&#10;    passed()&#10;&#10;def test_initial():&#10;    window = get_answer_placeholders()[0]&#10;    if window == &quot;type your name&quot;:&#10;        failed(&quot;You should modify the file&quot;)&#10;    else:&#10;        passed()&#10;&#10;def test_is_alpha():&#10;    window = get_answer_placeholders()[0]&#10;    is_multiline = window.find(&quot;\n&quot;)&#10;    if is_multiline != -1:&#10;        window = window[:is_multiline-1]&#10;    splitted = window.split()&#10;    for s in splitted:&#10;        if not s.isalpha():&#10;            failed(&quot;Please use only English characters this time.&quot;)&#10;            return&#10;&#10;    passed()&#10;&#10;&#10;if __name__ == '__main__':&#10;    test_ASCII()&#10;    run_common_tests(&quot;You should enter your name&quot;)&#10;    test_is_alpha()&#10;    test_initial()&#10;&#10;&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857115000" />
+                      <option name="updateDate" value="1513885915000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="hello_world.py">
@@ -84,7 +84,7 @@
                                       <option name="index" value="0" />
                                       <option name="initialState">
                                         <MyInitialState>
-                                          <option name="length" value="14" />
+                                          <option name="length" value="5" />
                                           <option name="offset" value="32" />
                                         </MyInitialState>
                                       </option>
@@ -128,7 +128,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests(&quot;You should type new comment&quot;)&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857142000" />
+                      <option name="updateDate" value="1513885942000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="comments.py">
@@ -145,8 +145,8 @@
                                       <option name="index" value="0" />
                                       <option name="initialState">
                                         <MyInitialState>
-                                          <option name="length" value="20" />
-                                          <option name="offset" value="138" />
+                                          <option name="length" value="42" />
+                                          <option name="offset" value="116" />
                                         </MyInitialState>
                                       </option>
                                       <option name="length" value="42" />
@@ -200,7 +200,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, failed, passed, import_task_file, get_answer_placeholders&#10;&#10;&#10;def test_task_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;another value&quot; == window:&#10;      failed(&quot;You should redefine the variable 'greetings'&quot;)&#10;    else:&#10;      passed()&#10;&#10;def test_value():&#10;    file = import_task_file()&#10;&#10;    if file.greetings == &quot;greetings&quot;:&#10;        failed(&quot;You should assign a different value to the variable&quot;)&#10;    else:&#10;        passed()&#10;&#10;if __name__ == '__main__':&#10;    test_task_window()&#10;    run_common_tests(&quot;You should redefine the variable 'greetings'&quot;)&#10;    test_value()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857171000" />
+                      <option name="updateDate" value="1513885971000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="variable_definition.py">
@@ -261,7 +261,7 @@
                           <entry key="tests.py" value="from test_helper import test_is_not_empty, test_answer_placeholders_text_deleted, passed, failed, import_task_file&#10;&#10;&#10;def test_is_identifier():&#10;    try:&#10;        import_task_file()&#10;    except NameError:&#10;        passed()&#10;        return&#10;    except SyntaxError:&#10;        failed(&quot;Used invalid identifier&quot;)&#10;        return&#10;    failed(&quot;Use undefined variable&quot;)&#10;&#10;&#10;if __name__ == '__main__':&#10;    error_text = &quot;You should type undefined variable here&quot;&#10;&#10;    test_is_not_empty()&#10;    test_answer_placeholders_text_deleted(error_text)&#10;    test_is_identifier()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857225000" />
+                      <option name="updateDate" value="1513886025000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="undefined_variable.py">
@@ -278,7 +278,7 @@
                                       <option name="index" value="0" />
                                       <option name="initialState">
                                         <MyInitialState>
-                                          <option name="length" value="14" />
+                                          <option name="length" value="11" />
                                           <option name="offset" value="19" />
                                         </MyInitialState>
                                       </option>
@@ -322,7 +322,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, get_answer_placeholders, passed, failed&#10;&#10;&#10;def test_type_used():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;type&quot; in window and &quot;float_number&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use the type() function&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_type_used()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857225000" />
+                      <option name="updateDate" value="1513886025000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="variable_type.py">
@@ -339,7 +339,7 @@
                                       <option name="index" value="0" />
                                       <option name="initialState">
                                         <MyInitialState>
-                                          <option name="length" value="17" />
+                                          <option name="length" value="18" />
                                           <option name="offset" value="93" />
                                         </MyInitialState>
                                       </option>
@@ -383,7 +383,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, get_answer_placeholders, passed, failed&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;int&quot; in window and &quot;float_number&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use the int() function&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_window()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857225000" />
+                      <option name="updateDate" value="1513886025000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="type_cast.py">
@@ -400,7 +400,7 @@
                                       <option name="index" value="0" />
                                       <option name="initialState">
                                         <MyInitialState>
-                                          <option name="length" value="31" />
+                                          <option name="length" value="17" />
                                           <option name="offset" value="113" />
                                         </MyInitialState>
                                       </option>
@@ -444,7 +444,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders&#10;&#10;&#10;def test_division():&#10;    file = import_task_file()&#10;    if file.result == 4.5:&#10;        passed()&#10;    else:&#10;        failed(&quot;Wrong result&quot;)&#10;&#10;&#10;def test_remainder():&#10;    file = import_task_file()&#10;    if file.remainder == 1.0:&#10;        passed()&#10;    else:&#10;        failed(&quot;Wrong remainder&quot;)&#10;&#10;&#10;def test_windows():&#10;    windows = get_answer_placeholders()&#10;    if not &quot;/&quot; in windows[0]:&#10;        failed(&quot;Use / operator&quot;)&#10;        return&#10;    if not &quot;%&quot; in windows[1]:&#10;        failed(&quot;Use % operator&quot;)&#10;        return&#10;    if &quot;number&quot; in windows[0] and &quot;number&quot; in windows[1]:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use the value stored in the variable \&quot;number\&quot;&quot;)&#10;&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests(&quot;Use / and % operators&quot;)&#10;    test_windows()&#10;    test_division()&#10;    test_remainder()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857225000" />
+                      <option name="updateDate" value="1513886025000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="arithmetic_operators.py">
@@ -461,7 +461,7 @@
                                       <option name="index" value="0" />
                                       <option name="initialState">
                                         <MyInitialState>
-                                          <option name="length" value="22" />
+                                          <option name="length" value="8" />
                                           <option name="offset" value="45" />
                                         </MyInitialState>
                                       </option>
@@ -484,8 +484,8 @@
                                       <option name="index" value="1" />
                                       <option name="initialState">
                                         <MyInitialState>
-                                          <option name="length" value="23" />
-                                          <option name="offset" value="81" />
+                                          <option name="length" value="10" />
+                                          <option name="offset" value="67" />
                                         </MyInitialState>
                                       </option>
                                       <option name="length" value="10" />
@@ -528,7 +528,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders&#10;&#10;&#10;def test_value():&#10;    file = import_task_file()&#10;    if file.number == 12.0:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use += operator&quot;)&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;+=&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use += operator&quot;)&#10;&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests(&quot;You should modify the file&quot;)&#10;    test_value()&#10;    test_window()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857225000" />
+                      <option name="updateDate" value="1513886025000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="assignments.py">
@@ -545,7 +545,7 @@
                                       <option name="index" value="0" />
                                       <option name="initialState">
                                         <MyInitialState>
-                                          <option name="length" value="8" />
+                                          <option name="length" value="2" />
                                           <option name="offset" value="100" />
                                         </MyInitialState>
                                       </option>
@@ -589,7 +589,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, failed, passed, import_task_file, get_answer_placeholders&#10;&#10;&#10;def test_value():&#10;    file = import_task_file()&#10;    if not file.is_equal:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use == operator&quot;)&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;==&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use == operator&quot;)&#10;&#10;&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests(&quot;You should modify the file&quot;)&#10;&#10;    test_value()&#10;    test_window()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857225000" />
+                      <option name="updateDate" value="1513886025000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="boolean_operators.py">
@@ -606,7 +606,7 @@
                                       <option name="index" value="0" />
                                       <option name="initialState">
                                         <MyInitialState>
-                                          <option name="length" value="8" />
+                                          <option name="length" value="2" />
                                           <option name="offset" value="34" />
                                         </MyInitialState>
                                       </option>
@@ -650,7 +650,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders&#10;&#10;&#10;def test_value():&#10;    file = import_task_file()&#10;    if file.is_greater:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use &gt; operator&quot;)&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;&gt;&quot; in window and &quot;&gt;=&quot; not in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use &gt; operator&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests(&quot;You should modify the file&quot;)&#10;    test_value()&#10;    test_window()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857225000" />
+                      <option name="updateDate" value="1513886025000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="comparison_operators.py">
@@ -667,7 +667,7 @@
                                       <option name="index" value="0" />
                                       <option name="initialState">
                                         <MyInitialState>
-                                          <option name="length" value="8" />
+                                          <option name="length" value="1" />
                                           <option name="offset" value="188" />
                                         </MyInitialState>
                                       </option>
@@ -722,7 +722,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders&#10;&#10;&#10;def test_value():&#10;    file = import_task_file()&#10;    if hasattr(file, &quot;hello_world&quot;) and file.hello_world == &quot;HelloWorld&quot;:&#10;        failed(&quot;Use one-space string ' ' in concatenation.&quot;)&#10;    else:&#10;        passed()&#10;&#10;&#10;def test_value_2():&#10;    file = import_task_file()&#10;    if hasattr(file, &quot;hello_world&quot;) and file.hello_world == &quot;Hello World&quot;:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use + operator&quot;)&#10;&#10;def test_concat_used():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;hello&quot; in window and &quot;world&quot; in window and &quot;+&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use previously defined variables and concatenation (+) to combine variables&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_value()&#10;    test_value_2()&#10;    test_concat_used()&#10;&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857277000" />
+                      <option name="updateDate" value="1513886077000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="concatenation.py">
@@ -739,7 +739,7 @@
                                       <option name="index" value="0" />
                                       <option name="initialState">
                                         <MyInitialState>
-                                          <option name="length" value="9" />
+                                          <option name="length" value="19" />
                                           <option name="offset" value="47" />
                                         </MyInitialState>
                                       </option>
@@ -783,7 +783,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders&#10;&#10;&#10;def test_value():&#10;    file = import_task_file()&#10;    if hasattr(file, &quot;ten_of_hellos&quot;) and file.ten_of_hellos == &quot;hellohellohellohellohellohellohellohellohellohello&quot;:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use multiplication&quot;)&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;*&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use multiplication&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests(&quot;You should modify the file&quot;)&#10;&#10;    test_value()&#10;    test_window()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857277000" />
+                      <option name="updateDate" value="1513886077000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="string_multiplication.py">
@@ -800,7 +800,7 @@
                                       <option name="index" value="0" />
                                       <option name="initialState">
                                         <MyInitialState>
-                                          <option name="length" value="8" />
+                                          <option name="length" value="1" />
                                           <option name="offset" value="38" />
                                         </MyInitialState>
                                       </option>
@@ -844,7 +844,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;[&quot; in window and &quot;0&quot; in window and &quot;]&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use indexing&quot;)&#10;&#10;def test_value():&#10;    file = import_task_file()&#10;    if hasattr(file, &quot;p_letter&quot;) and file.p_letter == &quot;P&quot;:&#10;        passed()&#10;    else:&#10;        failed(&quot;String index starts at 0.&quot;)&#10;&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;&#10;    test_value()&#10;    test_window()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857277000" />
+                      <option name="updateDate" value="1513886077000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="string_indexing.py">
@@ -905,7 +905,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders&#10;&#10;&#10;def test_value():&#10;    file = import_task_file()&#10;    if hasattr(file, &quot;exclamation&quot;) and file.exclamation == &quot;!&quot;:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use -1 index to get the last character&quot;)&#10;&#10;&#10;def test_negative_index():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;-&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use negative index&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;&#10;    test_negative_index()&#10;    test_value()&#10;&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857277000" />
+                      <option name="updateDate" value="1513886077000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="negative_indexing.py">
@@ -922,7 +922,7 @@
                                       <option name="index" value="0" />
                                       <option name="initialState">
                                         <MyInitialState>
-                                          <option name="length" value="9" />
+                                          <option name="length" value="15" />
                                           <option name="offset" value="58" />
                                         </MyInitialState>
                                       </option>
@@ -966,7 +966,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, failed, passed, import_task_file, get_answer_placeholders&#10;&#10;&#10;def test_value():&#10;    file = import_task_file()&#10;    if hasattr(file, &quot;python&quot;) and file.python == &quot;Python&quot;:&#10;        passed()&#10;    else:&#10;        failed(&quot;Check indices used in slicing&quot;)&#10;&#10;&#10;def test_monty_python():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;monty_python&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use slicing&quot;)&#10;&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_value()&#10;    test_monty_python()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857277000" />
+                      <option name="updateDate" value="1513886077000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="slicing.py">
@@ -983,7 +983,7 @@
                                       <option name="index" value="0" />
                                       <option name="initialState">
                                         <MyInitialState>
-                                          <option name="length" value="9" />
+                                          <option name="length" value="16" />
                                           <option name="offset" value="167" />
                                         </MyInitialState>
                                       </option>
@@ -1027,7 +1027,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders&#10;&#10;&#10;def test_value():&#10;    file = import_task_file()&#10;    if hasattr(file, &quot;contains&quot;) and file.contains:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use 'in' operator for this check&quot;)&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;&#10;    if &quot; in &quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use 'in' operator for this check&quot;)&#10;&#10;def test_ice_cream():&#10;    window = get_answer_placeholders()[0]&#10;&#10;    if &quot;ice cream&quot; in window or &quot;ice_cream&quot;:&#10;        passed()&#10;    else:&#10;        failed(&quot;Check if there is 'ice' in 'ice cream'&quot;)&#10;&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;&#10;    test_value()&#10;    test_window()&#10;    test_ice_cream()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857277000" />
+                      <option name="updateDate" value="1513886077000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="in_operator.py">
@@ -1044,7 +1044,7 @@
                                       <option name="index" value="0" />
                                       <option name="initialState">
                                         <MyInitialState>
-                                          <option name="length" value="9" />
+                                          <option name="length" value="18" />
                                           <option name="offset" value="99" />
                                         </MyInitialState>
                                       </option>
@@ -1081,14 +1081,14 @@
                       <option name="descriptionText" value="&#10;The &lt;code&gt;len()&lt;/code&gt; function is used to count how many characters a string contains.&#10;&lt;br&gt;&lt;br&gt;&#10;Get the first half of the string stored in the variable &lt;code&gt;phrase&lt;/code&gt;. &lt;br&gt;&#10;Note: Remember about type conversion.&#10;&lt;br&gt;&#10;" />
                       <option name="index" value="7" />
                       <option name="name" value="String length" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Solved" />
                       <option name="stepId" value="186026" />
                       <option name="testsText">
                         <map>
                           <entry key="tests.py" value="from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders, get_file_output&#10;&#10;&#10;def test_value():&#10;    output = get_file_output()&#10;    answer = ['It is a really long string', 'triple-quoted st']&#10;    if 'to define multi-line strings' in output:&#10;        failed(&quot;Too long string in the output&quot;)&#10;    else:&#10;        passed()&#10;&#10;    if all(word in output for word in answer):&#10;        passed()&#10;    else:&#10;        failed(&quot;Too short string in the output&quot;)&#10;&#10;def test_value_python3():&#10;    import sys&#10;    if sys.version[0] != &quot;3&quot;:&#10;        passed()&#10;        return&#10;    try:&#10;        import_task_file()&#10;        passed()&#10;    except TypeError:&#10;        failed(&quot;Division operator returns float in Python 3. Use int() function to convert float to integer.&quot;)&#10;&#10;if __name__ == '__main__':&#10;    test_value_python3()&#10;    run_common_tests()&#10;&#10;    test_value()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857277000" />
+                      <option name="updateDate" value="1513886077000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="len_function.py">
@@ -1109,19 +1109,19 @@
                                           <option name="offset" value="117" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="9" />
+                                      <option name="length" value="27" />
                                       <option name="offset" value="117" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="phrase[:int(len(phrase)/2)]" />
-                                      <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="selected" value="true" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="trackChanges" value="true" />
                                 <option name="trackLengths" value="true" />
                                 <option name="userCreated" value="false" />
@@ -1142,14 +1142,14 @@
                       <option name="descriptionText" value="&#10;Backslash is used to escape single or double quotation marks,&#10;for example &lt;code&gt;'It\'s me'&lt;/code&gt; or &lt;code&gt;&quot;She said \&quot;Hello\&quot;&quot;&lt;/code&gt;.&#10;The special symbol &lt;code&gt;'\n'&lt;/code&gt; is used to add a line break to a string.&#10;&lt;br&gt;&#10;Single quotation mark could be used in double quoted string without escaping and vice versa.&#10;&lt;br&gt;&lt;br&gt;&#10;Print out the following text using one string:&lt;br&gt;&#10;The name of this ice-cream is &quot;Sweet'n'Tasty&quot;&#10;&lt;br&gt;&#10;" />
                       <option name="index" value="8" />
                       <option name="name" value="Character escaping" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Solved" />
                       <option name="stepId" value="186027" />
                       <option name="testsText">
                         <map>
                           <entry key="tests.py" value="from test_helper import run_common_tests, get_answer_placeholders, passed, failed, get_file_output&#10;&#10;&#10;def test_value():&#10;    window = get_answer_placeholders()[0]&#10;&#10;    first = &quot;The name of this ice-cream is \\\&quot;Sweet'n'Tasty\\\&quot;&quot;&#10;    second = 'The name of this ice-cream is &quot;Sweet\\\'n\\\'Tasty&quot;'&#10;&#10;    if first in window or second in window:&#10;        passed()&#10;    else:&#10;        if '\\\&quot;Sweet' in window or 'Tasty\\\&quot;' in window:&#10;            failed(&quot;There is no need to escape double quotation mark in single quoted string&quot;)&#10;        failed(&quot;Sorry, the wrong string is printed&quot;)&#10;&#10;&#10;def test_output():&#10;    output = get_file_output()&#10;    index = output.index('''\&quot;Sweet\&quot; is an ice-cream''')&#10;    if index &gt; 0:&#10;        if len(output) &gt; index + 2:&#10;            failed(&quot;Print output in one line&quot;)&#10;    passed()&#10;&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_output()&#10;    test_value()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857277000" />
+                      <option name="updateDate" value="1513886077000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="character_escaping.py">
@@ -1170,19 +1170,19 @@
                                           <option name="offset" value="105" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="4" />
+                                      <option name="length" value="47" />
                                       <option name="offset" value="105" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="text" />
                                       <option name="possibleAnswer" value="The name of this ice-cream is &quot;Sweet\'n\'Tasty&quot;" />
-                                      <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="selected" value="true" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="trackChanges" value="true" />
                                 <option name="trackLengths" value="true" />
                                 <option name="userCreated" value="false" />
@@ -1203,14 +1203,14 @@
                       <option name="descriptionText" value="&#10;There are a lot of useful string methods. You can use the &lt;code&gt;lower()&lt;/code&gt;&#10;method to get rid of any capitalization in your strings.&#10;The &lt;code&gt;upper()&lt;/code&gt; method is used to make a string uppercase.&#10;To call any string method, type a dot after the string (or a variable containing the string)&#10;and the method name after it, e.g. &lt;code&gt;&quot;John&quot;.upper()&lt;/code&gt;.&#10;In PyCharm, you can explore all available string methods by using Ctrl+Space after a dot.&#10;&lt;br&gt;&lt;br&gt;&#10;Print &lt;code&gt;monty_python&lt;/code&gt; in upper case.&#10;&lt;br&gt;&#10;" />
                       <option name="index" value="9" />
                       <option name="name" value="Basic string methods" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Solved" />
                       <option name="stepId" value="186028" />
                       <option name="testsText">
                         <map>
                           <entry key="tests.py" value="from test_helper import run_common_tests, failed, passed, get_answer_placeholders&#10;&#10;&#10;def test_value():&#10;    window = get_answer_placeholders()[0]&#10;&#10;    if &quot;monty_python.upper()&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use upper() method&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_value()&#10;&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857277000" />
+                      <option name="updateDate" value="1513886077000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="string_methods.py">
@@ -1231,19 +1231,19 @@
                                           <option name="offset" value="131" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="24" />
+                                      <option name="length" value="20" />
                                       <option name="offset" value="131" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="upper cased monty_python" />
                                       <option name="possibleAnswer" value="monty_python.upper()" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="trackChanges" value="true" />
                                 <option name="trackLengths" value="true" />
                                 <option name="userCreated" value="false" />
@@ -1264,14 +1264,14 @@
                       <option name="descriptionText" value="&#10;The &lt;code&gt;%&lt;/code&gt; operator after a string is used to combine a string with variables.&#10;The &lt;code&gt;%&lt;/code&gt; operator will replace &lt;code&gt;%s&lt;/code&gt; in a string with the string variable that comes after it.&#10;The &lt;code&gt;%d&lt;/code&gt; special symbol is used as a placeholder for numeric or decimal values.&#10;&lt;br&gt;&lt;br&gt;&#10;Tell PyCharm how old you are.&#10;&lt;br&gt;&#10;" />
                       <option name="index" value="10" />
                       <option name="name" value="String formatting" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Solved" />
                       <option name="stepId" value="186029" />
                       <option name="testsText">
                         <map>
                           <entry key="tests.py" value="from test_helper import run_common_tests, passed, failed, get_answer_placeholders, import_task_file, get_file_output&#10;&#10;&#10;def test_window1():&#10;    windows = get_answer_placeholders()&#10;&#10;    if windows[1].isdigit():&#10;        passed()&#10;        return&#10;    else:&#10;        output = get_file_output()&#10;        if len(output) &gt; 1:&#10;            import re&#10;&#10;            p = re.compile(&quot;I'm (\d*) years old&quot;)&#10;            if p.match(output[1]) is not None:&#10;                passed()&#10;                return&#10;    failed(&quot;Print digit&quot;)&#10;&#10;&#10;def test_window():&#10;    windows = get_answer_placeholders()&#10;&#10;    if windows[0] == &quot;%d&quot;:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use %d special symbol&quot;)&#10;&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_window()&#10;    test_window1()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857277000" />
+                      <option name="updateDate" value="1513886077000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="string_formatting.py">
@@ -1292,13 +1292,13 @@
                                           <option name="offset" value="132" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="14" />
-                                      <option name="offset" value="132" />
+                                      <option name="length" value="3" />
+                                      <option name="offset" value="142" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="special symbol" />
                                       <option name="possibleAnswer" value="%d" />
-                                      <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="selected" value="true" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
@@ -1316,18 +1316,18 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="length" value="5" />
-                                      <option name="offset" value="160" />
+                                      <option name="offset" value="158" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="years" />
                                       <option name="possibleAnswer" value="17" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="trackChanges" value="true" />
                                 <option name="trackLengths" value="true" />
                                 <option name="userCreated" value="false" />
@@ -1359,14 +1359,14 @@
                       <option name="descriptionText" value="&#10;A list is a data structure you can use to store a collection of different pieces of information under a single variable name.&#10;A list can be written as an array of comma-separated values (items) between square brackets,&#10;e.g. &lt;code&gt;lst = [item1, item2]&lt;/code&gt;.&#10;Lists might contain items of different types, but usually all the items in the list are of the same type.&#10;Like strings, lists can be indexed and sliced (see &lt;a href=&quot;#lesson3#task3#&quot;&gt;Lesson 3&lt;/a&gt;).&#10;&lt;br&gt;&lt;br&gt;&#10;Use list slicing to print &lt;code&gt;[4, 9, 16]&lt;/code&gt;.&#10;&#10;&lt;br&gt;&#10;" />
                       <option name="index" value="1" />
                       <option name="name" value="Lists introduction" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Solved" />
                       <option name="stepId" value="186030" />
                       <option name="testsText">
                         <map>
                           <entry key="tests.py" value="from test_helper import run_common_tests, get_answer_placeholders, passed, failed, get_file_output, test_file_importable&#10;&#10;&#10;def test_value():&#10;    output = get_file_output()[1]&#10;    if &quot;[4, 9, 16]&quot; in output:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use list slicing lst[index1:index2]&quot;)&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;squares&quot; in window and &quot;[&quot; in window and &quot;]&quot; in window and &quot;:&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use list slicing lst[index1:index2]&quot;)&#10;&#10;if __name__ == '__main__':&#10;    test_file_importable()&#10;    test_value()&#10;    test_window()&#10;    run_common_tests(&quot;Use list slicing lst[index1:index2]&quot;)&#10;&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857341000" />
+                      <option name="updateDate" value="1513886141000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="lists.py">
@@ -1387,19 +1387,19 @@
                                           <option name="offset" value="70" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="5" />
+                                      <option name="length" value="12" />
                                       <option name="offset" value="70" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="slice" />
                                       <option name="possibleAnswer" value="squares[1:4]" />
-                                      <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="selected" value="true" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="trackChanges" value="true" />
                                 <option name="trackLengths" value="true" />
                                 <option name="userCreated" value="false" />
@@ -1420,14 +1420,14 @@
                       <option name="descriptionText" value="&#10;You can add new items at the end of the list, by using the &lt;code&gt;append()&lt;/code&gt; method and concatenation.&#10;Unlike strings, lists are a mutable type, i.e. it is possible to change their content using&#10;&lt;code&gt;lst[index] = new_item&lt;/code&gt;&#10;&lt;br&gt;&lt;br&gt;&#10;Replace &lt;code&gt;'dino'&lt;/code&gt; with &lt;code&gt;'dinosaur'&lt;/code&gt; in the &lt;code&gt;animals&lt;/code&gt; list.&#10;&lt;br&gt;&#10;" />
                       <option name="index" value="2" />
                       <option name="name" value="Lists operations" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Solved" />
                       <option name="stepId" value="186031" />
                       <option name="testsText">
                         <map>
                           <entry key="tests.py" value="from test_helper import run_common_tests, import_task_file, passed, failed, get_answer_placeholders&#10;&#10;&#10;def test_value():&#10;    file = import_task_file()&#10;    if hasattr(file, &quot;animals&quot;) and &quot;dinosaur&quot; in file.animals and not &quot;dino&quot; in file.animals:&#10;        passed()&#10;    else:&#10;        failed(&quot;Replace 'dino' with 'dinosaur'&quot;)&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;animals&quot; in window and &quot;[&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Replace 'dino' with 'dinosaur'&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests(&quot;Use indexing and assignment&quot;)&#10;    test_value()&#10;    test_window()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857341000" />
+                      <option name="updateDate" value="1513886141000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="list_operations.py">
@@ -1448,19 +1448,19 @@
                                           <option name="offset" value="257" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="30" />
+                                      <option name="length" value="24" />
                                       <option name="offset" value="257" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="replace 'dino' with 'dinosaur'" />
                                       <option name="possibleAnswer" value="animals[-1] = 'dinosaur'" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="trackChanges" value="true" />
                                 <option name="trackLengths" value="true" />
                                 <option name="userCreated" value="false" />
@@ -1481,14 +1481,14 @@
                       <option name="descriptionText" value="&#10;Assignment to slices is also possible, and this can even change the size of a list or clear it entirely.&#10;&lt;br&gt;&lt;br&gt;&#10;Clear &lt;code&gt;animals&lt;/code&gt; list.&#10;&lt;br&gt;&#10;" />
                       <option name="index" value="3" />
                       <option name="name" value="List items" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Solved" />
                       <option name="stepId" value="186032" />
                       <option name="testsText">
                         <map>
                           <entry key="tests.py" value="from test_helper import run_common_tests, failed, passed, import_task_file, get_answer_placeholders&#10;&#10;&#10;def test_value():&#10;    file = import_task_file()&#10;    if hasattr(file, &quot;animals&quot;) and not file.animals:&#10;        passed()&#10;    else:&#10;        failed(&quot;Clear animals list&quot;)&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;animals&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Clear animals list&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests(&quot;Use assignment to empty list&quot;)&#10;    test_window()&#10;    test_value()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857341000" />
+                      <option name="updateDate" value="1513886141000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="list_items.py">
@@ -1509,19 +1509,19 @@
                                           <option name="offset" value="301" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="10" />
+                                      <option name="length" value="12" />
                                       <option name="offset" value="301" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="clear list" />
                                       <option name="possibleAnswer" value="animals[:] = []" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="trackChanges" value="true" />
                                 <option name="trackLengths" value="true" />
                                 <option name="userCreated" value="false" />
@@ -1542,14 +1542,14 @@
                       <option name="descriptionText" value="&#10;Tuples are almost identical to lists. The only significant difference between tuples and lists is that&#10;tuples cannot be changed:&#10;you cannot add, change, or delete elements from the tuple.&#10;Tuples are constructed by a comma operator enclosed in parentheses, for example &lt;code&gt;(a, b, c)&lt;/code&gt;.&#10;A single item tuple must have a trailing comma, such as &lt;code&gt;(d,)&lt;/code&gt;.&#10;&#10;&lt;br&gt;&lt;br&gt;&#10;Print the length of the &lt;code&gt;alphabet&lt;/code&gt;.&#10;&lt;br&gt;&#10;" />
                       <option name="index" value="4" />
                       <option name="name" value="Tuples" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Solved" />
                       <option name="stepId" value="186033" />
                       <option name="testsText">
                         <map>
                           <entry key="tests.py" value="from test_helper import run_common_tests, passed, failed, get_answer_placeholders&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;len(&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use len() function&quot;)&#10;&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests(&quot;Use len() function&quot;)&#10;    test_window()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857341000" />
+                      <option name="updateDate" value="1513886141000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="tuples.py">
@@ -1570,19 +1570,19 @@
                                           <option name="offset" value="161" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="15" />
+                                      <option name="length" value="13" />
                                       <option name="offset" value="161" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="alphabet length" />
                                       <option name="possibleAnswer" value="len(alphabet)" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="trackChanges" value="true" />
                                 <option name="trackLengths" value="true" />
                                 <option name="userCreated" value="false" />
@@ -1603,14 +1603,14 @@
                       <option name="descriptionText" value="&#10;A dictionary is similar to a list, except that you access its values by looking up a key instead of an index.&#10;A key can be any string or a number. Dictionaries are enclosed in curly braces e.g.&#10;&lt;code&gt;dct = {'key1' : &quot;value1&quot;, 'key2' : &quot;value2&quot;}&lt;/code&gt;.&#10;&lt;br&gt;&lt;br&gt;&#10;Print Jane's phone number from &lt;code&gt;phone_book&lt;/code&gt;.&#10;&lt;br&gt;&#10;" />
                       <option name="index" value="5" />
                       <option name="name" value="Dictionaries" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Solved" />
                       <option name="stepId" value="186034" />
                       <option name="testsText">
                         <map>
                           <entry key="tests.py" value="from test_helper import run_common_tests, get_answer_placeholders, passed, failed&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;phone_book&quot; in window and &quot;Jane&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use indexing e.g. dct[key]&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests(&quot;Use indexing e.g. dct[key]&quot;)&#10;    test_window()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857341000" />
+                      <option name="updateDate" value="1513886141000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="dicts.py">
@@ -1631,19 +1631,19 @@
                                           <option name="offset" value="311" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="12" />
+                                      <option name="length" value="18" />
                                       <option name="offset" value="311" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="Jane's phone" />
                                       <option name="possibleAnswer" value="phone_book['Jane']" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="trackChanges" value="true" />
                                 <option name="trackLengths" value="true" />
                                 <option name="userCreated" value="false" />
@@ -1664,14 +1664,14 @@
                       <option name="descriptionText" value="&#10;There are a lot of useful methods in dictionaries such as &lt;code&gt;keys()&lt;/code&gt; and &lt;code&gt;values()&lt;/code&gt;. You can explore the rest using&#10;Ctrl + Space after a &lt;code&gt;dict_name&lt;/code&gt; followed by a dot.&#10;&lt;br&gt;&lt;br&gt;&#10;Print all values from &lt;code&gt;phone_book&lt;/code&gt;.&#10;&lt;br&gt;&#10;" />
                       <option name="index" value="6" />
                       <option name="name" value="Dictionary keys() and values()" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Solved" />
                       <option name="stepId" value="186035" />
                       <option name="testsText">
                         <map>
                           <entry key="tests.py" value="from test_helper import run_common_tests, passed, failed, get_answer_placeholders&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;phone_book&quot; in window and &quot;values()&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use values() method&quot;)&#10;&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_window()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857341000" />
+                      <option name="updateDate" value="1513886141000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="dict_key_value.py">
@@ -1692,19 +1692,19 @@
                                           <option name="offset" value="208" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="17" />
+                                      <option name="length" value="19" />
                                       <option name="offset" value="208" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="phone_book values" />
                                       <option name="possibleAnswer" value="phone_book.values()" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="trackChanges" value="true" />
                                 <option name="trackLengths" value="true" />
                                 <option name="userCreated" value="false" />
@@ -1725,14 +1725,14 @@
                       <option name="descriptionText" value="&#10;The &lt;code&gt;in&lt;/code&gt; keyword is used to check if a list or a dictionary contains a specific item.&#10;You can apply &lt;code&gt;in&lt;/code&gt; to lists or dictionaries the same way as you did with strings.&#10;&lt;br&gt;&lt;br&gt;&#10;Check if &lt;code&gt;grocery_dict&lt;/code&gt; keys contain &lt;code&gt;&quot;fish&quot;&lt;/code&gt;.&#10;&lt;br&gt;&#10;" />
                       <option name="index" value="7" />
                       <option name="name" value="In keyword" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Solved" />
                       <option name="stepId" value="186036" />
                       <option name="testsText">
                         <map>
                           <entry key="tests.py" value="from test_helper import run_common_tests, failed, passed, get_answer_placeholders&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;grocery_dict&quot; in window and &quot; in &quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use in keyword&quot;)&#10;&#10;def test_fish():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;fish&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Check if grocery_dict keys contain fish&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests(&quot;Use in keyword&quot;)&#10;    test_window()&#10;    test_fish()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857341000" />
+                      <option name="updateDate" value="1513886141000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="in_keyword.py">
@@ -1753,19 +1753,19 @@
                                           <option name="offset" value="236" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="30" />
+                                      <option name="length" value="29" />
                                       <option name="offset" value="236" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="is 'fish' in grocery_dict keys" />
                                       <option name="possibleAnswer" value="'fish' in grocery_dict.keys()" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="trackChanges" value="true" />
                                 <option name="trackLengths" value="true" />
                                 <option name="userCreated" value="false" />
@@ -1797,14 +1797,14 @@
                       <option name="descriptionText" value="&#10;Boolean operators compare statements and return results in boolean values.&#10;The boolean operator &lt;code&gt;and&lt;/code&gt; returns &lt;code&gt;True&lt;/code&gt; when the expressions on both sides of &lt;code&gt;and&lt;/code&gt; are &lt;code&gt;True&lt;/code&gt;.&#10;The boolean operator &lt;code&gt;or&lt;/code&gt; returns &lt;code&gt;True&lt;/code&gt; when at least one expression on either side of &lt;code&gt;or&lt;/code&gt; is &lt;code&gt;True&lt;/code&gt;.&#10;The boolean operator &lt;code&gt;not&lt;/code&gt; inverts the boolean expression it precedes.&#10;&lt;br&gt;&lt;br&gt;&#10;Check if &lt;code&gt;name&lt;/code&gt; is equal to &lt;code&gt;&quot;John&quot;&lt;/code&gt; and he is not &lt;code&gt;23&lt;/code&gt; years old.&#10;&lt;br&gt;&#10;" />
                       <option name="index" value="1" />
                       <option name="name" value="Boolean operators" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Solved" />
                       <option name="stepId" value="186037" />
                       <option name="testsText">
                         <map>
                           <entry key="tests.py" value="from test_helper import run_common_tests, passed, failed, get_answer_placeholders&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;name&quot; in window and &quot;John&quot; in window and &quot;and&quot; in window and &quot;23&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use 'and' keyword and != operator&quot;)&#10;&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests(&quot;Use 'and' keyword and != operator&quot;)&#10;    test_window()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857367000" />
+                      <option name="updateDate" value="1513886167000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="boolean_operators.py">
@@ -1825,19 +1825,19 @@
                                           <option name="offset" value="132" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="24" />
+                                      <option name="length" value="28" />
                                       <option name="offset" value="132" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="John is not 23 years old" />
                                       <option name="possibleAnswer" value="name == 'John' and age != 23" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="trackChanges" value="true" />
                                 <option name="trackLengths" value="true" />
                                 <option name="userCreated" value="false" />
@@ -1858,14 +1858,14 @@
                       <option name="descriptionText" value="&#10;Boolean operators are not evaluated from left to right. There's an order of operations for boolean operators:&#10;&lt;code&gt;not&lt;/code&gt; is evaluated first, &lt;code&gt;and&lt;/code&gt; is evaluated next, &lt;code&gt;or&lt;/code&gt; is evaluated last.&#10;&lt;br&gt;&lt;br&gt;&#10;Check if &lt;code&gt;name&lt;/code&gt; is &lt;code&gt;&quot;Ellis&quot;&lt;/code&gt; or&#10;it's not true that &lt;code&gt;name&lt;/code&gt; equal &lt;code&gt;&quot;John&quot;&lt;/code&gt; and&#10;he is &lt;code&gt;17&lt;/code&gt; years old at the same time.&#10;&lt;br&gt;&#10;" />
                       <option name="index" value="2" />
                       <option name="name" value="Boolean operators order" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Solved" />
                       <option name="stepId" value="186038" />
                       <option name="testsText">
                         <map>
                           <entry key="tests.py" value="from test_helper import run_common_tests, failed, passed, get_answer_placeholders&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot; and &quot; in window and &quot; or &quot; in window and &quot; not &quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use 'and', 'or' and 'not' keywords&quot;)&#10;&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests(&quot;Use 'and', 'or' and 'not' keywords&quot;)&#10;    test_window()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857367000" />
+                      <option name="updateDate" value="1513886167000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="boolean_order.py">
@@ -1886,19 +1886,19 @@
                                           <option name="offset" value="108" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="69" />
+                                      <option name="length" value="53" />
                                       <option name="offset" value="108" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="&quot;name&quot; is &quot;Ellis&quot; or not (&quot;name&quot; equal &quot;John&quot; and he is 17 years old)" />
                                       <option name="possibleAnswer" value="name is &quot;Ellis&quot; or not (name is &quot;John&quot; and age == 17)" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="trackChanges" value="true" />
                                 <option name="trackLengths" value="true" />
                                 <option name="userCreated" value="false" />
@@ -1919,14 +1919,14 @@
                       <option name="descriptionText" value="&#10;The &lt;code&gt;if&lt;/code&gt; keyword is used to form a conditional statement that executes some specified code after checking if its expression is &lt;code&gt;True&lt;/code&gt;.&#10;Python uses indentation to define code blocks.&#10;&lt;br&gt;&lt;br&gt;&#10;Print &lt;code&gt;&quot;empty&quot;&lt;/code&gt; if the &lt;code&gt;tasks&lt;/code&gt; list is empty.&#10;&lt;br&gt;&#10;" />
                       <option name="index" value="3" />
                       <option name="name" value="If statement" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Solved" />
                       <option name="stepId" value="186039" />
                       <option name="testsText">
                         <map>
                           <entry key="tests.py" value="from test_helper import run_common_tests, failed, passed, get_answer_placeholders&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;:&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Don't forget a column at the end&quot;)&#10;&#10;&#10;def test_len():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;len&quot; in window:&#10;        passed()&#10;    elif &quot;not&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use len function to check that tasks is empty&quot;)&#10;&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_window()&#10;    test_len()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857367000" />
+                      <option name="updateDate" value="1513886167000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="if_statement.py">
@@ -1947,19 +1947,19 @@
                                           <option name="offset" value="236" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="25" />
+                                      <option name="length" value="19" />
                                       <option name="offset" value="236" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="check if 'tasks' is empty" />
                                       <option name="possibleAnswer" value="if len(tasks) == 0:" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="trackChanges" value="true" />
                                 <option name="trackLengths" value="true" />
                                 <option name="userCreated" value="false" />
@@ -1980,14 +1980,14 @@
                       <option name="descriptionText" value="&#10;The &lt;code&gt;else&lt;/code&gt; statement complements the &lt;code&gt;if&lt;/code&gt;&#10;statement. The &lt;code&gt;elif&lt;/code&gt; keyword is short for &quot;else if&quot;.&#10;&lt;br&gt;&lt;br&gt;&#10;Print &lt;code&gt;True&lt;/code&gt; if name is equal to &lt;code&gt;&quot;John&quot;&lt;/code&gt;&#10;and &lt;code&gt;False&lt;/code&gt; otherwise.&#10;&lt;br&gt;&#10;" />
                       <option name="index" value="4" />
                       <option name="name" value="Else, elif part in if statement" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Solved" />
                       <option name="stepId" value="186040" />
                       <option name="testsText">
                         <map>
                           <entry key="tests.py" value="from test_helper import run_common_tests, get_answer_placeholders, passed, failed&#10;&#10;&#10;def test_window1():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;John&quot; in window and &quot;if &quot; in window:&#10;        if &quot;==&quot; in window or &quot;is&quot; in window:&#10;            passed()&#10;        else:&#10;            failed(&quot;Check equality&quot;)&#10;    else:&#10;        failed(&quot;Use if keyword&quot;)&#10;&#10;&#10;def test_window2():&#10;    window = get_answer_placeholders()[1]&#10;    if &quot;else&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use else keyword&quot;)&#10;&#10;&#10;def test_columns():&#10;    windows = get_answer_placeholders()&#10;    if &quot;:&quot; in windows[0] and &quot;:&quot; in windows[1]:&#10;        passed()&#10;    else:&#10;        failed(&quot;Don't forget a colon at the end&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests(&quot;Use if/else keywords&quot;)&#10;    test_window1()&#10;    test_window2()&#10;    test_columns()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857367000" />
+                      <option name="updateDate" value="1513886167000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="else_elif.py">
@@ -2008,13 +2008,13 @@
                                           <option name="offset" value="352" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="29" />
+                                      <option name="length" value="18" />
                                       <option name="offset" value="352" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="check if name equal to &quot;John&quot;" />
                                       <option name="possibleAnswer" value="if name == 'John':" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
@@ -2031,19 +2031,19 @@
                                           <option name="offset" value="398" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="9" />
-                                      <option name="offset" value="398" />
+                                      <option name="length" value="5" />
+                                      <option name="offset" value="387" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="otherwise" />
                                       <option name="possibleAnswer" value="else:" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="trackChanges" value="true" />
                                 <option name="trackLengths" value="true" />
                                 <option name="userCreated" value="false" />
@@ -2075,14 +2075,14 @@
                       <option name="descriptionText" value="&#10;&lt;code&gt;for&lt;/code&gt; loops are used to iterate over a given sequence.&#10;On each iteration, the variable defined in the &lt;code&gt;for&lt;/code&gt;&#10;loop will be assigned to the next value in the list.&#10;&#10;&lt;br&gt;&lt;br&gt;&#10;Print each prime number from the &lt;code&gt;primes&lt;/code&gt; list using the &lt;code&gt;for&lt;/code&gt; loop.&#10;A prime number is a natural number greater than &lt;code&gt;1&lt;/code&gt; that has no positive divisors other than &lt;code&gt;1&lt;/code&gt; and itself.&#10;&lt;br&gt;&#10;" />
                       <option name="index" value="1" />
                       <option name="name" value="For loop" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Solved" />
                       <option name="stepId" value="186041" />
                       <option name="testsText">
                         <map>
                           <entry key="tests.py" value="from test_helper import run_common_tests, failed, passed, get_answer_placeholders&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;prime&quot; in window and &quot;for &quot; in window and &quot;primes&quot; in window and &quot; in &quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use for loop to iterate over 'primes'&quot;)&#10;&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_window()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857389000" />
+                      <option name="updateDate" value="1513886189000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="for_loop.py">
@@ -2103,19 +2103,19 @@
                                           <option name="offset" value="238" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="34" />
+                                      <option name="length" value="20" />
                                       <option name="offset" value="238" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="iterate over primes using for loop" />
                                       <option name="possibleAnswer" value="for prime in primes:" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="trackChanges" value="true" />
                                 <option name="trackLengths" value="true" />
                                 <option name="userCreated" value="false" />
@@ -2136,14 +2136,14 @@
                       <option name="descriptionText" value="&#10;Strings are very similar to lists in Python. You can use string to iterate over it.&#10;&lt;br&gt;&lt;br&gt;&#10;Use a loop to count how many characters &lt;code&gt;hello_world&lt;/code&gt; contains. Store this number in the &lt;code&gt;length&lt;/code&gt; variable.&#10;&lt;br&gt;&#10;" />
                       <option name="index" value="2" />
                       <option name="name" value="For loop using string" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Solved" />
                       <option name="stepId" value="186042" />
                       <option name="testsText">
                         <map>
                           <entry key="tests.py" value="from test_helper import run_common_tests, failed, passed, get_answer_placeholders, import_task_file&#10;&#10;&#10;def test_value():&#10;    file = import_task_file()&#10;    if hasattr(file, &quot;length&quot;) and file.length == 13:&#10;        passed()&#10;    else:&#10;        failed(&quot;Count again&quot;)&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;for &quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use a for loop to iterate over the hello_world string&quot;)&#10;&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_window()&#10;    test_value()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857389000" />
+                      <option name="updateDate" value="1513886189000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="for_string.py">
@@ -2164,19 +2164,19 @@
                                           <option name="offset" value="158" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="59" />
+                                      <option name="length" value="21" />
                                       <option name="offset" value="158" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="count how many characters are in the hello_world using loop" />
                                       <option name="possibleAnswer" value="for ch in hello_world:" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="trackChanges" value="true" />
                                 <option name="trackLengths" value="true" />
                                 <option name="userCreated" value="false" />
@@ -2197,14 +2197,14 @@
                       <option name="descriptionText" value="&#10;A &lt;code&gt;while&lt;/code&gt; loop is similar to an &lt;code&gt;if&lt;/code&gt; statement: it executes some code if some condition is true.&#10;The key difference is that it will continue to execute indented code for as long as the condition is &lt;code&gt;True&lt;/code&gt;.&#10;&lt;br&gt;&lt;br&gt;&#10;Print all squares from &lt;code&gt;0&lt;/code&gt; to &lt;code&gt;99&lt;/code&gt; &lt;code&gt;(1, 4, ... , 81)&lt;/code&gt;.&#10;Use &lt;code&gt;number&lt;/code&gt; variable in &lt;code&gt;while&lt;/code&gt; loop.&#10;&lt;br&gt;&#10;" />
                       <option name="index" value="3" />
                       <option name="name" value="While loop" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Solved" />
                       <option name="stepId" value="186043" />
                       <option name="testsText">
                         <map>
                           <entry key="tests.py" value="from test_helper import run_common_tests, failed, passed, get_answer_placeholders, get_file_output&#10;&#10;&#10;def test_column():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;:&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Don't forget a colon at the end&quot;)&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;while &quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use a while loop to iterate&quot;)&#10;&#10;&#10;def test_window1():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;number&quot; in window:&#10;        passed()&#10;    elif 'square' in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use 'number' variable in the while condition&quot;)&#10;&#10;&#10;def test_window2():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;10&quot; in window:&#10;        if &quot;&lt;&quot; in window or &quot;10 &gt;&quot; in window:&#10;            passed()&#10;    elif 'square' in window:&#10;        if &quot;&lt;&quot; and &quot;81&quot; in window:&#10;            passed()&#10;    else:&#10;        failed(&quot;Check that 'number' is strictly less than 10 in the condition&quot;)&#10;&#10;&#10;def test_output():&#10;    output = get_file_output()&#10;    if &quot;Finished&quot; not in output:&#10;        failed(&quot;Sorry, this answer is wrong&quot;)&#10;        return&#10;    border = output.index(&quot;Finished&quot;)&#10;    user_squares = output[border + 1:]&#10;    user_squares = [x for x in user_squares if x]&#10;    correct_answer = list(map(str, [x * x for x in range(1, 10)]))&#10;    if correct_answer == user_squares:&#10;        passed()&#10;    else:&#10;        failed(&quot;Sorry, this answer is wrong&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_window()&#10;    test_window1()&#10;    test_window2()&#10;    test_column()&#10;    test_output()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857389000" />
+                      <option name="updateDate" value="1513886189000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="while_loop.py">
@@ -2225,19 +2225,19 @@
                                           <option name="offset" value="213" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="30" />
+                                      <option name="length" value="49" />
                                       <option name="offset" value="213" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="print all squares from 0 to 99" />
                                       <option name="possibleAnswer" value="while square &lt; 81:" />
-                                      <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="selected" value="true" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="trackChanges" value="true" />
                                 <option name="trackLengths" value="true" />
                                 <option name="userCreated" value="false" />
@@ -2258,14 +2258,14 @@
                       <option name="descriptionText" value="&#10;An infinite loop is a loop that never exits. If the loop condition happens to always be &lt;code&gt;True&lt;/code&gt;, such a loop becomes infinite.&#10;The &lt;code&gt;break&lt;/code&gt; keyword is used to exit the current loop.&#10;&lt;br&gt;&lt;br&gt;&#10;Exit the loop correctly using &lt;code&gt;break&lt;/code&gt; statement.&#10;&lt;br&gt;&#10;" />
                       <option name="index" value="4" />
                       <option name="name" value="Break keyword" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Solved" />
                       <option name="stepId" value="186044" />
                       <option name="testsText">
                         <map>
                           <entry key="tests.py" value="from test_helper import run_common_tests, passed, failed, get_answer_placeholders&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;elephant&quot; in window and &quot;animal&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use == to check that animal is equal to 'elephant'&quot;)&#10;&#10;&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_window()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857389000" />
+                      <option name="updateDate" value="1513886189000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="break_keyword.py">
@@ -2286,19 +2286,19 @@
                                           <option name="offset" value="377" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="33" />
+                                      <option name="length" value="20" />
                                       <option name="offset" value="377" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="exit loop if animal is 'elephant'" />
                                       <option name="possibleAnswer" value="animal == 'elephant'" />
-                                      <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="selected" value="true" />
+                                      <option name="status" value="Solved" />
                                       <option name="studentAnswer" />
                                       <option name="useLength" value="true" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="trackChanges" value="true" />
                                 <option name="trackLengths" value="true" />
                                 <option name="userCreated" value="false" />
@@ -2326,7 +2326,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, passed, failed, get_answer_placeholders, get_file_output&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;x&quot; in window and &quot;%&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use % operator to check that x is even&quot;)&#10;&#10;&#10;def test_output():&#10;    numbers = ['0', '2', '4', '6', '8']&#10;    output = get_file_output()&#10;    if len(output) &gt; 4:&#10;        output = output[4:]&#10;    if any(number in output for number in numbers):&#10;        failed(&quot;Print only odd the numbers&quot;)&#10;    else:&#10;        passed()&#10;&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_output()&#10;    test_window()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857389000" />
+                      <option name="updateDate" value="1513886189000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="continue_keyword.py">
@@ -2347,7 +2347,7 @@
                                           <option name="offset" value="154" />
                                         </MyInitialState>
                                       </option>
-                                      <option name="length" value="18" />
+                                      <option name="length" value="8" />
                                       <option name="offset" value="154" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="Check if x is even" />
@@ -2359,7 +2359,7 @@
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="trackChanges" value="true" />
                                 <option name="trackLengths" value="true" />
                                 <option name="userCreated" value="false" />
@@ -2398,7 +2398,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, failed, get_answer_placeholders, passed&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;fun&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Name your function 'fun'&quot;)&#10;&#10;&#10;def test_window1():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;def &quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use 'def' keyword to define a function&quot;)&#10;&#10;&#10;def test_column():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;:&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Don't forget a colon at the end of the statement&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_window()&#10;    test_column()&#10;    test_window1()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857413000" />
+                      <option name="updateDate" value="1513886213000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="functions.py">
@@ -2459,7 +2459,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, failed, get_answer_placeholders, passed&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;square&quot; in window and &quot;def &quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Name your function 'square'&quot;)&#10;&#10;&#10;def test_column():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;:&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Don't forget a colon at the end of the statement&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_column()&#10;    test_window()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857413000" />
+                      <option name="updateDate" value="1513886213000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="param_args.py">
@@ -2520,7 +2520,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, get_answer_placeholders, passed, failed, import_task_file&#10;&#10;def test_window1():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;1&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Initialize b with 1&quot;)&#10;&#10;&#10;def test_window2():&#10;    window = get_answer_placeholders()[1]&#10;    if &quot;b&quot; in window and &quot;a&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Update b with a + b&quot;)&#10;&#10;def test_window3():&#10;    window = get_answer_placeholders()[2]&#10;    if &quot;tmp_var&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Update a with tmp_var&quot;)&#10;&#10;def test_function():&#10;    try:&#10;        my_file = import_task_file()&#10;        if hasattr(my_file, &quot;fib&quot;) and my_file.fib(10) == [1, 1, 2, 3, 5, 8]:&#10;            passed()&#10;        else:&#10;            failed(&quot;Check your function for n = 10&quot;)&#10;    except:&#10;        failed(&quot;The file contains syntax errors&quot;)&#10;&#10;&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_window1()&#10;    test_window2()&#10;    test_window3()&#10;    test_function()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857413000" />
+                      <option name="updateDate" value="1513886213000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="return_keyword.py">
@@ -2627,7 +2627,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, failed, passed, get_answer_placeholders&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;=&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Add a default value to the parameter&quot;)&#10;&#10;def test_window_names():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;subject&quot; in window and &quot;name&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Add a default value to the parameter&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_window()&#10;    test_window_names()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857413000" />
+                      <option name="updateDate" value="1513886213000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="default_parameter.py">
@@ -2699,7 +2699,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857441000" />
+                      <option name="updateDate" value="1513886241000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="class_definition.py">
@@ -2760,7 +2760,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, failed, passed, get_answer_placeholders&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;my_object&quot; in window and &quot;variable1&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Access 'variable1' using my_object.variable1&quot;)&#10;&#10;def test_window1():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;my_object &quot; in window or &quot;my_object.&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Access 'variable1' using my_object.variable1&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_window()&#10;    test_window1()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857441000" />
+                      <option name="updateDate" value="1513886241000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="access_variable.py">
@@ -2821,7 +2821,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, get_answer_placeholders, passed, failed, get_file_output&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;Car&quot; in window and &quot;(&quot; in window and &quot;)&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Create a new car using Car()&quot;)&#10;&#10;&#10;def test_window2():&#10;    window = get_answer_placeholders()[1]&#10;    output = get_file_output()&#10;    if len(output) &gt; 1 and output[1] == &quot;This is a red car.&quot;:&#10;        passed()&#10;    else:&#10;        failed(&quot;Change color using assignment to the car2.color&quot;)&#10;&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_window()&#10;    test_window2()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857441000" />
+                      <option name="updateDate" value="1513886241000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="access_variable.py">
@@ -2905,7 +2905,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, get_answer_placeholders, passed, failed&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;self&quot; in window and &quot;amount&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Access the current variable of the class using self.current&quot;)&#10;&#10;def test_window2():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;amount&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Add the value of 'amount' to self.current&quot;)&#10;&#10;def test_window3():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;+=&quot; in window or (&quot;+&quot; in window and &quot;=&quot; in window):&#10;        passed()&#10;    else:&#10;        failed(&quot;Add amount value to self.current&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_window()&#10;    test_window2()&#10;    test_window3()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857441000" />
+                      <option name="updateDate" value="1513886241000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="self_parameter.py">
@@ -2966,7 +2966,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, get_answer_placeholders, passed, failed&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;color&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Add a color parameter&quot;)&#10;&#10;&#10;def test_window1():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;self&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Don't forget about the self parameter&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_window()&#10;    test_window1()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857441000" />
+                      <option name="updateDate" value="1513886241000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="init_method.py">
@@ -3038,7 +3038,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, get_answer_placeholders, passed, failed&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;import &quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use 'import' keyword&quot;)&#10;&#10;&#10;def test_window1():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;my_module&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Import module my_module&quot;)&#10;&#10;&#10;def test_window2():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;my_module.py&quot; in window:&#10;        failed(&quot;Don't use the file extension here&quot;)&#10;    else:&#10;        passed()&#10;&#10;&#10;def test_window3():&#10;    window = get_answer_placeholders()[1]&#10;    if &quot;my_module&quot; in window and &quot;hello_world(&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Call hello_world function using my_module.hello_world&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_window1()&#10;    test_window()&#10;    test_window2()&#10;    test_window3()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857464000" />
+                      <option name="updateDate" value="1513886264000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="calculator.py">
@@ -3152,7 +3152,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, failed, passed, get_answer_placeholders, get_file_output&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    output = get_file_output()&#10;    if &quot;datetime&quot; not in window:&#10;        failed(&quot;Use datetime module&quot;)&#10;    elif len(output) &gt; 0 and &quot;&lt;&quot; not in output[0]:&#10;        passed()&#10;    else:&#10;        failed(&quot;Print the current date&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_window()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857464000" />
+                      <option name="updateDate" value="1513886264000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="builtin_modules.py">
@@ -3213,7 +3213,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, failed, passed, get_answer_placeholders&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;from &quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use hello_world imported from my_module&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_window()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857464000" />
+                      <option name="updateDate" value="1513886264000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="calculator.py">
@@ -3292,10 +3292,10 @@
                 </option>
               </Lesson>
               <Lesson>
-                <option name="customPresentableName" value="File input/output" />
+                <option name="customPresentableName" />
                 <option name="id" value="13428" />
                 <option name="index" value="10" />
-                <option name="name" value="File input output" />
+                <option name="name" value="File input/output" />
                 <option name="updateDate" value="1513857480000" />
                 <option name="taskList">
                   <list>
@@ -3315,7 +3315,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, failed, passed, get_answer_placeholders, get_file_output&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;print&quot; in window and &quot;line&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use print function&quot;)&#10;&#10;&#10;def test_window2():&#10;    default_error = &quot;Use 'readline' method&quot;&#10;    window = get_answer_placeholders()[1]&#10;    output = list(filter(lambda x: x != &quot;&quot;, get_file_output()))&#10;    if len(output) == 2 and output[1] == &quot;My first line&quot;:&#10;        passed()&#10;        return&#10;    if &quot;print&quot; not in window:&#10;        failed(&quot;Don't forget to print the line&quot;)&#10;        return&#10;    failed(default_error)&#10;&#10;&#10;def test_window3():&#10;    window = get_answer_placeholders()[2]&#10;    if &quot;close(&quot; not in window:&#10;        failed(&quot;Call 'close' method&quot;)&#10;        return&#10;    if &quot;f1&quot; not in window:&#10;        failed(&quot;Close file f1&quot;)&#10;        return&#10;    passed()&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_window()&#10;    test_window2()&#10;    test_window3()" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857480000" />
+                      <option name="updateDate" value="1513886280000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="input.txt">
@@ -3452,7 +3452,7 @@
                           <entry key="tests.py" value="from test_helper import run_common_tests, get_answer_placeholders, passed, failed&#10;&#10;&#10;def test_window():&#10;    window = get_answer_placeholders()[0]&#10;    if &quot;'a'&quot; in window or '&quot;a&quot;' in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use 'a' modifier to append lines to the end of file&quot;)&#10;&#10;&#10;def test_window1():&#10;    window = get_answer_placeholders()[1]&#10;    if &quot;write&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Use 'write' method&quot;)&#10;&#10;&#10;def test_window3():&#10;    window = get_answer_placeholders()[2]&#10;    if &quot;f&quot; in window and &quot;close&quot; in window and &quot;(&quot; in window:&#10;        passed()&#10;    else:&#10;        failed(&quot;Call 'close' method&quot;)&#10;&#10;if __name__ == '__main__':&#10;    run_common_tests()&#10;    test_window()&#10;    test_window1()&#10;    test_window3()&#10;" />
                         </map>
                       </option>
-                      <option name="updateDate" value="1513857480000" />
+                      <option name="updateDate" value="1513886280000" />
                       <option name="taskFiles">
                         <map>
                           <entry key="output.txt">
@@ -3566,6 +3566,9 @@
         </RemoteCourse>
       </option>
       <option name="VERSION" value="9" />
+      <option name="myUserTests">
+        <map />
+      </option>
     </StudyTaskManager>
   </component>
 </project>
